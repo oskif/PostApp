@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/postsListFragment">
+
+    <fragment
+        tools:layout="@layout/fragment_posts_list"
+        android:id="@+id/postsListFragment"
+        android:name="com.example.postapp.view.fragments.PostsListFragment"
+        android:label="PostsListFragment" >
+        <action
+            android:id="@+id/navigateToDetailsFragment"
+            app:destination="@id/postDetailsFragment" />
+        <action
+            android:id="@+id/navigateToAddFragment"
+            app:destination="@id/postAddFragment" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/fragment_post_details"
+        android:id="@+id/postDetailsFragment"
+        android:name="com.example.postapp.view.fragments.PostDetailsFragment"
+        android:label="PostDetailsFragment" >
+        <argument
+            android:name="postId"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/postAddFragment"
+        android:name="com.example.postapp.view.fragments.PostAddFragment"
+        android:label="fragment_post_add"
+        tools:layout="@layout/fragment_post_add" >
+        <action
+            android:id="@+id/navigateToPostsListFragment"
+            app:destination="@id/postsListFragment" />
+    </fragment>
+</navigation>

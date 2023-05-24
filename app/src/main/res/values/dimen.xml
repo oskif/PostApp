@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="title_size">20sp</dimen>
+    <dimen name="body_size">15sp</dimen>
+    <dimen name="margin2">2dp</dimen>
+    <dimen name="margin4">4dp</dimen>
+    <dimen name="standard_margin">10dp</dimen>
+    <dimen name="floating_action_button_margin">40dp</dimen>
+    <dimen name="corner_radius">15dp</dimen>
+</resources>

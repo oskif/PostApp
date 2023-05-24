@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:orientation="vertical"
+        android:padding="@dimen/standard_margin">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/standard_margin"
+            android:layout_marginTop="@dimen/margin2"
+            android:layout_marginRight="@dimen/standard_margin"
+            android:background="@drawable/title_shape"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_size"
+            android:paddingStart="@dimen/margin4"
+            android:paddingEnd="@dimen/margin4"/>
+
+        <TextView
+            android:id="@+id/body"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/standard_margin"
+            android:layout_marginRight="@dimen/standard_margin"
+            android:layout_marginBottom="@dimen/margin2"
+            android:background="@drawable/body_shape"
+            android:paddingBottom="@dimen/standard_margin"
+            android:textColor="@color/white"
+            android:padding="@dimen/margin2"
+            android:paddingStart="@dimen/margin4"
+            android:paddingEnd="@dimen/margin4"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
